@@ -1,0 +1,421 @@
+* {
+	margin:0; padding:0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	position: relative;
+	margin-top: 60px;
+}
+
+.page-title {
+	font-weight: 700;
+	font-size: 36px;
+/*	padding: 15px 25px 10px 0;
+*/}
+
+.page-title span {
+	color: #b9b9b9;
+}
+
+.header {
+/*	position: relative;
+*/	background: url('../img/background-photo1.jpg') no-repeat bottom center, #052241;
+	background: #052241;
+
+
+	color: white;
+}
+
+.title{ 
+	font-weight: 700;
+}
+
+.main-nav {
+	display: inline-block;
+}
+
+.nav-container {
+	background-color: rgba(0, 46, 91, 0.7);
+}
+
+.nav-element {
+	display: inline-block;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 10px;
+	letter-spacing: 2px;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-item {
+	display: inline-block;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 7px;
+	letter-spacing: 2px;
+
+	border-bottom: 2px solid transparent;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-element:hover,
+.nav-element.active {
+	border-bottom: 2px solid #fde428;
+}
+
+.nav-item:hover,
+.nav-item.active {
+	border-bottom: 2px solid #fde428;
+}
+
+.header-box {
+	padding: 50px 0 50px;
+/*	min-height: 700px;
+*/}
+
+.main-title { 
+	font-size: 42px;
+	font-weight: 600;
+	padding-bottom: 40px;
+ }
+
+.btn {
+	border: 1px solid #fde428;
+	color: #fde428;
+	border-radius: 8px;
+	padding: 18px 30px;
+	cursor: pointer;
+
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.btn:active,
+.btn:visited {
+	color: #fde428;
+}
+
+.btn:hover {
+	color: #002e5b;
+	background-color: #fde428;
+	border-color: #002e5b;
+}
+
+.carousel-content-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.offer .btn {
+	background: #fde428;
+	color: #002e5b;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.offer .btn:hover {
+	border-color: #002e5b;
+}
+
+.about,
+.offer,
+.service-range,
+.our-advantages,
+.our-awards,
+.contact-us {
+	padding-top: 100px;
+	padding-bottom: 60px;
+}
+
+.contact-us {
+	padding-bottom: 0;
+}
+
+.text {
+	font-weight: 400;
+	font-size: 16px;
+	margin: 20px 0 0;
+}
+
+.offer-title,
+.list-item-title {
+	font-size: 21px;
+	color: #292b2c;
+	font-weight: 700;
+}
+
+.list-item-title {
+	padding: 20px 0 0;
+	color: #002e5b;
+	text-transform: uppercase;
+}
+
+.service-range .title,
+.about .title,
+.offer .title,
+.contact-us .title {
+	font-size: 32px;
+}
+
+.service-range .title,
+.about .title,
+.offer .title {
+	color: #002e5b;
+}
+
+.offer,
+.offer-title,
+.about .text {
+	color: #666666;
+}
+
+.offer-title {
+	padding: 30px 0;
+}
+
+.underlined {
+	text-decoration: underline;
+}
+
+.service-range .title {
+	padding-bottom: 40px;
+}
+
+.service-range-list .list-item {
+	list-style: none;
+}
+
+.service-range-list .list-item {
+    padding-left: 19px;
+    text-indent: -19px;
+}
+
+.service-range-list .list-item::before {
+	content: "■";
+	font-size: 20px;
+	line-height: 30px;
+	color: #fde428;
+	padding-right: 7px;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.img-static {
+	display: block;
+	margin: 0 auto;
+}
+
+.scroll-down {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+
+	padding: 10px 0 20px;
+}
+
+.img-static.mouse {
+	width: 20px;
+
+	animation: bobble 3s  infinite
+	   -moz-animation: bobble 3s  infinite;
+	-webkit-animation: bobble 3s  infinite;
+	     -o-animation: bobble 3s  infinite;
+}
+
+.img-static.arrow {
+	fill: white;
+	transform: rotate(180deg);
+}
+
+.our-advantages,
+.contact-us-bar,
+.contact-us,
+.footer {
+	background-color: #002e5b;
+	color: white;
+}
+
+.contact-us-bar .btn {
+	margin: 20px;
+}
+
+.contact-us .subtitle {
+	margin-top: 40px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.offer {
+	background-color: #e1e1e1;
+}
+
+.contact-us-bar .title {
+	font-weight: 500;
+	font-size: 21px;
+}
+
+.advantages-list {
+	list-style-type: none;
+	padding-top: 50px;
+}
+
+.contact-list {
+	list-style-type: none;
+}
+
+.advantages-list .list-item {
+}
+
+.contact-list .description,
+.advantages-list .description {
+	padding: 20px;
+}
+
+.footer {
+}
+
+.footer:before {
+	content: " ";
+	display: block;
+	height: 20px;
+	background-color: #fde428;
+}
+
+.copyright {
+	padding: 30px 0;
+}
+
+.copyright span{
+	color: #fde428;
+}
+
+.google-map,
+.google-map iframe {
+	width: 100%;
+	height: 400px;
+}
+
+.items-list {
+	box-sizing: border-box;
+}
+
+.items-list .item {
+	padding: 20px;
+}
+
+.text-block {
+	background: #f1f1f1;
+	padding: 20px 10px 10px 20px;
+}
+
+.text-block .title {
+	font-size: 20px;
+	padding-bottom: 15px;
+}
+
+.text-block .paragraph {
+	color: #002e5b;
+}
+
+.text-block .paragraph span {
+	color: #666666;
+}
+
+@keyframes bobble {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  20% {
+    transform: translateY(-10px);
+  }
+
+  40% {
+    transform: translateY(+10px);
+  }
+
+  60% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+
+}
+
+/*.navbar-toggler {
+	background: transparent;
+	display: block;
+	width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 5px;
+}*/
+
+.icon-bar {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 7px auto;
+    background: white;
+}
+
+.collapse.in {
+	display: block;
+}
+
+@media (min-width: 992px) {
+	.nav-item {
+		padding: 0;
+		margin: 0 10px 0;
+	}
+}
+
+@media (max-width: 991px) {
+	.navbar-toggleable-md > .container {
+	    margin-left: 20px;
+	    margin-right: 20px;
+	}
+}
+
+.navbar {
+	padding: 0;
+}
+
+.nav-tabs,
+.nav-tabs .nav-link {
+	border: none;
+}
+
+.nav-tabs .nav-link:focus, 
+.nav-tabs .nav-link:hover {
+    border-color: none;
+}
+
+.navbar-inverse .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
+}
+
+.navbar-inverse .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 1);
+}
