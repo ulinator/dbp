@@ -5836,8 +5836,6 @@ button.close {
   position: relative;
   width: 100%;
   overflow: hidden;
-
-  max-height: 90vh;
 }
 
 .carousel-item {
