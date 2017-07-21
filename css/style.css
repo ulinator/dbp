@@ -109,7 +109,7 @@ body {
 }
 
 .carousel {
-	position: fixed;
+	position: relative;
 }
 
 .carousel-inner {
@@ -123,6 +123,7 @@ body {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    width: 100vw;
 }
 
 .offer .btn {
@@ -139,8 +140,8 @@ body {
 .main-section {
 	background: white;
 	position: relative;
-	margin-top: 85vh;
-}
+/*	margin-top: 85vh;
+*/}
 
 .about,
 .offer,
@@ -254,7 +255,7 @@ body {
     right: 0;
     bottom: 0;
 
-
+    width: 100vw;
 	padding: 10px 0 20px;
 }
 
@@ -437,26 +438,6 @@ body {
 	padding-bottom: 50px;
 }
 
-@media (min-width: 768px) {
-	.text-block {
-		background: #f1f1f1;
-		text-align: left;
-	}
-}
-
-@media (max-width: 991px) {
-	.navbar-toggleable-md > .container {
-	    margin-left: 20px;
-	    margin-right: 20px;
-	}
-}
-
-@media (min-width: 1200px) {
-	.nav-item {
-		padding: 7px;
-		margin: 0 10px 0;
-	}
-}
 
 .navbar {
 	padding: 0;
@@ -497,8 +478,8 @@ body {
 	background: white;
 	border: 1px solid #002e5b;
 	border-radius: 5px;
-	margin: 10px;
-	font-size: 16px;
+	margin: 3px;
+	font-size: 12px;
 }
 
 .tab-text {
@@ -507,10 +488,55 @@ body {
 }
 
 .tab.broken a{
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .tab.active a {
 	background: #fde52c;
+}
+
+
+@media (min-width: 768px) {
+	.text-block {
+		background: #f1f1f1;
+		text-align: left;
+	}
+
+	.carousel {
+		position: fixed;
+	}
+
+	.carousel-inner {
+		max-height: 85vh;
+	}
+
+	.main-section {
+		margin-top: 85vh;
+	}
+
+	.tab a {
+		margin: 5px 10px;
+		font-size: 16px;
+	}
+
+	.tab.broken a{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+}
+
+@media (max-width: 991px) {
+	.navbar-toggleable-md > .container {
+	    margin-left: 20px;
+	    margin-right: 20px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.nav-item {
+		padding: 7px;
+		margin: 0 10px 0;
+	}
 }
