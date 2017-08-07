@@ -15,7 +15,14 @@ body {
 */}
 
 .page-title span {
+	font-size: 40px;
 	color: #b9b9b9;
+}
+
+.page-title mark {
+	letter-spacing: -5px;
+	padding: 0;
+	background-color: transparent;
 }
 
 .header {
@@ -354,25 +361,6 @@ body {
 	padding: 20px;
 }
 
-.text-block {
-	background: white;
-	padding: 20px 10px 10px 20px;
-	text-align: center;
-}
-
-.text-block .title {
-	font-size: 20px;
-	padding-bottom: 15px;
-}
-
-.text-block .paragraph {
-	color: #002e5b;
-}
-
-.text-block .paragraph span {
-	color: #666666;
-}
-
 .references .title {
 	padding-bottom: 30px;
 }
@@ -381,10 +369,31 @@ body {
 	padding-bottom: 10px;
 }
 
-.references .paragraph {
-	color: #666666;
-	padding-bottom: 30px;
+.text-block {
+	background: white;
+	padding: 20px 10px 10px 20px;
+	text-align: center;
+	width: 100%;
 }
+
+.text-block .title {
+	font-size: 18px;
+	padding-bottom: 15px;
+}
+
+.text-block .paragraph {
+	font-size: 14px;
+	color: #002e5b;
+}
+
+.text-block .paragraph span {
+	color: #666666;
+}
+
+.items-list .item-img {
+	margin: 0 auto;
+}
+
 
 @keyframes bobble {
   0% {
